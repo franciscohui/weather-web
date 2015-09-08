@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>Weather API</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/forecast.js"></script>
+  <script src="js/moment.js"></script>     
+  <!-- 
+  <script src="js/forecastChart.js"></script> 
+  <script src="js/test.js"></script>    
+  <script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+  -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+  <body>
+
+    <div id="pageWrapper">
+      <h1>Today's Weather</h1>
+      <div id="hourlyTemps">
+        <div class="hourlyTime label"></div>
+        <div class="hourlySummary"></div>
+        <div class="hourlyTemp"></div>        
+      </div> <!-- #hourlyTemps -->
+    </div> <!-- #pageWrapper -->
+
+    <!-- <div class="chart"></div> -->
+    <svg class="chart"></svg>
+  </body>
+</html>

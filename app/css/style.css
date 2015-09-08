@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('meteocons-webfont.ttf') format('truetype');
+}
+
+[data-icon]:before {
+  font-family: 'MeteoconsRegular';
+  content: attr(data-icon);
+}
+
+/*@media only screen and (max-width : 414px){} */
+
+  body {
+    background: -webkit-linear-gradient(#1E6474, #083A4F);
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: lighter;
+  } 
+  h1{
+    font-size: 2em;
+    text-align: center;
+  }
+  p{
+    margin: 0;
+  }
+  .label{
+    color: rgba(255,255,255,0.5);
+  }
+  #pageWrapper{
+/*    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    align-items: flex-start;
+    padding: 1em 0;*/
+  }
+  .currentTemp{
+    -webkit-flex-grow: 1;
+    padding: 0 1em;
+  }
+  #tempDegrees{
+    font-size: 2em;
+  }
+  #feelsLike{
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(35, 97, 149, 0.2);
+  }
+  #feelsLikeSection{
+    margin-top: 2em;
+  }
+  #hourlyTemps{
+    display: -webkit-flex;
+    -webkit-flex-grow: 1;
+    justify-content: center;
+    margin: 0 8em;
+  }
+  #hourlyTemps li{
+    -webkit-box-pack: center;
+  }
+  #hourlyTemps li{
+    list-style: none;
+    height: 1.75em;
+  }
+  .hourlyTime{
+    text-align: right;
+  }  
+  .hourlyTemp{
+  }
+  .hourlySummary{
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+
+
+
+/*@media only screen and (min-width: 415px){
+  body, html{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: gray;
+    background: -webkit-linear-gradient(#FFC64C, #4ACAFF);
+  }    
+  .currentTemp{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    margin: 0;
+  }
+  .currentTemp  p {
+    margin: 0;
+  }
+  .label{
+    color: rgba(0,0,0,0.5);
+  }
+  #tempDegrees{
+    font-size: 3em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+  #feelsLike{
+    font-size: 3em;
+    margin-top: .25em;
+  }
+
+  #callout{
+    position: relative;
+    width: 96px;
+    border-radius: 7px;
+    top: -140px;
+    padding: 10px;
+    margin: 0 25%;
+    background: rgba(255,255,255, 1);
+    border: 5px solid rgba(204,204,204, 0.1);
+    box-shadow: 0 2px 2px 0px rgba(129,129,129,0.5);
+  }
+  .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    position: absolute;
+    right: -20px;
+    bottom: 29px;
+  }
+  #hourlyTemps{
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    color: white;
+  }
+  .hourlyTemp{
+    float: left;
+    margin: 0 10px;
+  }
+  .hourlyTime{
+    width: 9em;
+    text-align: right;
+    color: rgba(255,255,255, 0.7);
+  }
+}*/
+
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
